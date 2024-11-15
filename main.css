@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+:root{
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+
+    --Dark-gray: hsl(0, 0%, 59%);
+
+}
+
+
+@media (min-width: 1440px){
+
+    .bg-container{
+        background-color: var(--Dark-cyan);
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .bg-container .top{
+        position: absolute;
+        top: -60%;
+        left: -22%;
+    }
+
+    .top img{
+        height: 60rem;
+        width: 65rem;
+    }
+
+    .bg-container .bottom{
+        position: absolute;
+        bottom: -80%;
+        right: -18%;
+    }
+
+    .bottom img{
+        height: 60rem;
+        width: 65rem;
+    }
+
+/*******************/
+    .card{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 350px;
+        height: 400px;
+        background-color: white;
+        border-radius: 20px;
+        display: grid;
+        grid-template-rows: 38% 38% 12% 12%;
+        box-shadow: 0 0 17px 8px #0000004f;
+        }
+
+    .bg-card{
+        grid-row: 1/2;
+    }
+    .card .bg-card img{
+        border-top-left-radius:20px;
+        border-top-right-radius:20px;
+        height: 100%;
+        width: 100%;
+    }
+    .card .avatar img{
+        border-radius: 50%;
+        position: absolute;
+        border: 7px solid white;
+        left: 35%;
+        top: 24%;
+    }
+
+    .card .details{
+        grid-row: 2/3;
+    }
+
+    .details h2{
+        font-weight: 700;
+        font-size: 18px;
+        margin-top: 62px;
+        margin-left: 114px;
+    }
+    .details span{
+        font-weight: 400;
+        font-size: 18px;
+        color: var(--Dark-gray);
+    }
+    .details p{
+        font-weight: 400;
+        font-size: 15px;
+        color: var(--Dark-gray);
+        margin-top: 8px;
+        margin-left: 151px;
+    }
+
+    .details hr{
+        margin-top: 40px;
+        border: none;
+        outline: none;
+        background-color: hsl(0deg 0% 59% / 56%);
+        height: 1px;
+    }
+/******************************************/
+    .followers{
+        grid-row: 3/4;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .followers h2{
+        display: inline;
+        margin-top:25px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .followers2 {
+        grid-row: 4/5;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .followers2 .followers ,.likes{
+        display: inline;
+        margin-top: -21px;
+        font-size: 12px;
+        color: var(--Dark-gray);
+        text-align: center;
+        text-indent: -4px;
+    }
+    .followers2 .photos{
+        display: inline;
+        margin-top: -21px;
+        font-size: 12px;
+        color: var(--Dark-gray);
+        text-align: center;
+        text-indent: 11px;
+    }
+}
+
+@media (max-width: 375px){
+
+    .bg-container{
+        background-color: var(--Dark-cyan);
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .bg-container .top{
+        position: absolute;
+        top: -76%;
+        left: -221%;
+    }
+
+    .top img{
+        height: 60rem;
+        width: 65rem;
+    }
+
+    .bg-container .bottom{
+        position: absolute;
+        bottom: -76%;
+        right: -221%;
+    }
+
+    .bottom img{
+        height: 60rem;
+        width: 65rem;
+    }
+
+/*******************/
+
+.card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 330px;
+    height: 420px;
+    background-color: white;
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: 38% 38% 12% 12%;
+    box-shadow: 0 0 17px 8px #0000004f;
+    }
+
+.bg-card{
+    grid-row: 1/2;
+}
+.card .bg-card img{
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    height: 100%;
+    width: 100%;
+}
+.card .avatar img{
+    border-radius: 50%;
+    position: absolute;
+    border: 7px solid white;
+    left: 35%;
+    top: 24%;
+}
+
+.card .details{
+    grid-row: 2/3;
+}
+
+.details h2{
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 62px;
+    margin-left: 114px;
+}
+.details span{
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--Dark-gray);
+}
+.details p{
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--Dark-gray);
+    margin-top: 8px;
+    margin-left: 151px;
+}
+
+.details hr{
+    margin-top: 40px;
+    border: none;
+    outline: none;
+    background-color: hsl(0deg 0% 59% / 56%);
+    height: 1px;
+}
+.followers{
+    grid-row: 3/4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.followers h2{
+    display: inline;
+    margin-top:25px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.followers2 {
+    grid-row: 4/5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.followers2 .followers ,.likes{
+    display: inline;
+    margin-top: -21px;
+    font-size: 12px;
+    color: var(--Dark-gray);
+    text-align: center;
+    text-indent: -3px;
+}
+.followers2 .photos{
+    display: inline;
+    margin-top: -21px;
+    font-size: 12px;
+    color: var(--Dark-gray);
+    text-align: center;
+    text-indent: 11px;
+}
+
+}
